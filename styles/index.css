@@ -1,4 +1,82 @@
-body{
-    background-color: lightgray;
-    font-family: 'Courier New', Courier, monospace;
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth transitions */
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Navbar animations */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3B82F6;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#mobile-menu.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+#mobile-menu:not(.hidden) {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* cursor typing */
+.cursor {
+    font-weight: normal;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
