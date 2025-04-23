@@ -1,13 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>my portfolio</title>
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body>
-    <h1>WELCOME TO MY PORTFOLIO</h1>
+<body class="bg-gray-100 font-sans">
+   
+    <div id="navbar"></div>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-blue-500 to-purple-600">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col-reverse md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Hi</h1>
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">I'm Haymanot Asmare</h1>
+                    <h1 class="text-4xl md:text-6xl text-white mb-6" id="skill"></h1>
+                    <p class="text-xl text-gray-200 mb-8">Full-Stack Developer | Turning Ideas into Reality.</p>
+                    <a href="mailto:haymanotasmaretakele@gmail.com" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Get in Touch</a>
+                </div>
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-left">
+                    <div class="w-64 h-64 mx-auto overflow-hidden rounded-full shadow-2xl">
+                        <img src="images/me.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/load-components.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile menu toggle
+        document.getElementById('menu-toggle')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        
+    </script>
+
+   
+
 </body>
 </html>
