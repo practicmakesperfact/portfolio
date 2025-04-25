@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Modern Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+   <!-- rendered from navbar.html by js -->
+    <div id="navbar"></div>
+    <!-- Services Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="w-32 h-32 mx-auto mb-8 overflow-hidden rounded-full shadow-xl" data-aos="fade-down">
+                    <img src="images/me.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">My Services</h2>
+                <p class="text-gray-600" data-aos="fade-up" data-aos-delay="100">Here are the services I offer to help bring your vision to life</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Web Development -->
+                <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Web Development</h3>
+                    <p class="text-gray-600">Custom web development solutions using modern technologies and best practices to create responsive and user-friendly websites.</p>
+                </div>
+
+                <!-- Mobile App Development -->
+                <!-- <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Mobile App Development</h3>
+                    <p class="text-gray-600">Native and cross-platform mobile applications that provide seamless user experiences across all devices.</p>
+                </div> -->
+
+                <!-- UI/UX Design -->
+                <!-- <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">UI/UX Design</h3>
+                    <p class="text-gray-600">Creative and intuitive user interface designs that enhance user experience and engagement.</p>
+                </div> -->
+
+                <!-- Database Design -->
+                <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Database Design</h3>
+                    <p class="text-gray-600">Efficient database architecture and management solutions for optimal data organization and retrieval.</p>
+                </div>
+
+                <!-- API Development -->
+                <!-- <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">API Development</h3>
+                    <p class="text-gray-600">Robust and scalable API solutions that enable seamless integration between different systems and services.</p>
+                </div> -->
+
+                <!-- Consulting -->
+                <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-delay="600">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Technical Consulting</h3>
+                    <p class="text-gray-600">Expert advice and guidance on technology solutions, architecture, and best practices for your projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- rendered from footer.html by js -->
+    <div id="footer"></div>
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/load-components.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

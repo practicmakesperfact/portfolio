@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <div id="navbar"></div>
+    <!-- Education Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="w-32 h-32 mx-auto mb-8 overflow-hidden rounded-full shadow-xl" data-aos="fade-down">
+                    <img src="images/me.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">Education & Achievements</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Education Timeline -->
+                <div class="space-y-8" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Education</h3>
+                    <div class="relative pl-8 border-l-2 border-blue-500">
+                        <div class="mb-8">
+                            <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px]"></div>
+                            <h4 class="text-xl font-semibold text-gray-800">High School Diploma</h4>
+                            <!-- <p class="text-gray-600">Science Stream</p> -->
+                            <p class="text-gray-500">2021</p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px]"></div>
+                            <h4 class="text-xl font-semibold text-gray-800">Bachelor's Degree</h4>
+                            <p class="text-gray-600">Software Engineering Student at Wollo University</p>
+                            <p class="text-gray-500">2022 - PRESENT</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Experience Timeline -->
+                <div class="space-y-8" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Certificates</h3>
+                    <div class="relative pl-8 border-l-2 border-blue-500">
+                        <div class="mb-8">
+                            <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px]"></div>
+                            <h4 class="text-xl font-semibold text-gray-800">Fundamentals of Programming</h4>
+                            <p class="text-gray-600">Udacity -2024</p>
+                              <img src="images/certificate.png" class="w-84 h-64 my-4" >
+                        </div>
+                        <!-- <div class="mb-8">
+                            <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px]"></div>
+                            <h4 class="text-xl font-semibold text-gray-800">Intern Developer</h4>
+                            <p class="text-gray-600">Startup Inc.</p>
+                            <p class="text-gray-500">2022 - 2023</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="contact.html" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/load-components.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
