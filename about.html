@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+   <!-- rendered from navbar.html by js -->
+    <div id="navbar"></div>
+    <!-- About Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <div class="relative">
+                        <!-- Replace with your image -->
+                        <div class="w-full h-98 bg-gray-300 rounded-lg shadow-xl">
+                            <img src="images/me.jpg"  class="w-full h-full object-cover object-center rounded-lg">
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 w-72 h-72 bg-blue-500 rounded-lg -z-10"></div>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">                
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">About Me</h2>
+                        <p class="text-gray-600 mb-6">
+                            I am a Full-Stack Web Developer and Software Engineer with expertise in HTML, CSS(tailwindcss), JavaScript, Django, MongoDB, and REST APIs.  
+                            Passionate about building scalable and efficient applications, I specialize in developing dynamic web solutions that  
+                            bridge frontend and backend technologies seamlessly. I thrive on solving complex problems and transforming ideas into reality  
+                            through clean and maintainable code.
+                        </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-3"></i>
+                            <span class="text-gray-700">Full Stack Development</span>
+                        </div>
+                        <!-- <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-3"></i>
+                            <span class="text-gray-700">UI/UX Design</span>
+                        </div> -->
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-3"></i>
+                            <span class="text-gray-700">Problem Solving</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Info Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Experience</h3>
+                    <p class="text-gray-600">1<sup>+</sup> years of  experience in web development and design.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Education</h3>
+                    <p class="text-gray-600">Software Engineering Student at Wollo University</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Location</h3>
+                    <p class="text-gray-600">
+                         <i class="fas fa-map-marker-alt text-red-500 mr-2"></i> Dessie, Kombolcha, Ethiopia
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <!-- rendered from footer.html by js -->
+    <div id="footer"></div> 
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/load-components.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
