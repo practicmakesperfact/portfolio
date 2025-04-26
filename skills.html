@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <!-- rendered from navbar.html by js -->
+    <div id="navbar"></div>
+    <!-- Skills Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="w-32 h-32 mx-auto mb-8 overflow-hidden rounded-full shadow-xl" data-aos="fade-down">
+                    <img src="images/me.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">My Skills</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    I specialize in full-stack web development with expertise in Python/Django and modern frontend technologies.
+                </p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend Development -->
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-500 text-3xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Frontend Development</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">HTML</span>
+                                <span class="text-gray-600 skill-percent"></span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="90" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">CSS</span>
+                                <span class="text-gray-600 skill-percent"></span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="74" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Tailwind CSS</span>
+                                <span class="text-gray-600 skill-percent"></span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="81" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Development -->
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-500 text-3xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Backend Development</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Python</span>
+                                <span class="text-gray-600 skill-percent"></span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="74" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Django</span>
+                                <span class="text-gray-600 skill-percent"></span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="78" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Django REST API</span>
+                                <span class="text-gray-600 skill-percent"></span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="58" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases & Tools -->
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-500 text-3xl mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Databases & Tools</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">MySQL</span>
+                                <span class="text-gray-600 skill-percent"></span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="82" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">MongoDB</span>
+                                <span class="text-gray-600 skill-percent"></span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="85"="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Git & GitHub</span>
+                                <span class="text-gray-600 skill-percent"></span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="66" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Skills -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Development Process -->
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-right">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Development Process</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            RESTful API Development
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Database Design & Optimization
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Version Control with Git
+                        </li>
+                        <!-- <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            API Integration & Testing
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-left">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Professional Skills</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Problem Solving
+                        </li>
+                        <!-- <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Team Collaboration
+                        </li> -->
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Code Review & Documentation
+                        </li>
+                        <!-- <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Agile Development
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="contact.html" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+     <!-- rendered from footer.html by js -->
+    <div id="footer"></div>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/load-components.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const skillBars = document.querySelectorAll(".skill-bar");
+
+            skillBars.forEach((bar) => {
+                let percentage = bar.getAttribute("data-skill"); // Get skill percentage
+                bar.style.width = "0%"; // Initially set to 0 for animation
+                
+                setTimeout(() => {
+                    bar.style.transition = "width 1.5s ease-in-out"; // Smooth transition
+                    bar.style.width = percentage + "%"; // Set width dynamically
+                }, 500);
+
+                // Update percentage text
+                bar.parentElement.previousElementSibling.querySelector(".skill-percent").textContent = percentage + "%";
+            });
+        });
+    </script>
+
+</body>
+</html>
