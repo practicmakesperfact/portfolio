@@ -81,3 +81,31 @@ function typeEffect() {
 
 // Start typing effect on page load
 window.onload = typeEffect;
+
+
+
+// Theme Toggle Functionality
+const toggleButton = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+  const htmlElement = document.documentElement; // <html> tag
+
+  // Load saved theme
+  if (localStorage.getItem('theme') === 'dark') {
+    htmlElement.classList.add('dark');
+    themeIcon.classList.remove('fa-moon');
+    themeIcon.classList.add('fa-sun');
+  }
+
+  toggleButton.addEventListener('click', () => {
+    htmlElement.classList.toggle('dark');
+
+    if (htmlElement.classList.contains('dark')) {
+      themeIcon.classList.remove('fa-moon');
+      themeIcon.classList.add('fa-sun');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      themeIcon.classList.remove('fa-sun');
+      themeIcon.classList.add('fa-moon');
+      localStorage.setItem('theme', 'light');
+    }
+  });
