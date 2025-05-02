@@ -1,4 +1,4 @@
-# Ignore configuration files containing sensitive data
+
 js/config.js
 
 # Ignore environment files
