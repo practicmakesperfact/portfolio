@@ -1,4 +1,7 @@
 /* Custom animations */
+
+html body {
+    background-color: #f3f4f6 !important; 
 @keyframes fadeIn {
     from {
         opacity: 0;
