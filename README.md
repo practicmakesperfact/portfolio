@@ -7,7 +7,7 @@ Welcome to my personal portfolio — a fully responsive and modern web portfolio
 
 ## ✨ Live Preview
 
-> 🚀 Coming Soon: [my-portfolio.live](https://haymanotportfolio.netlify.app)
+>  (https://haymanotportfolio.netlify.app)
 
 ---
 
