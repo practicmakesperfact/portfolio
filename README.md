@@ -1,14 +1,13 @@
-# 🌐 Haymanot's Developer Portfolio
+# 🌐 Haymanot's Personal Portfolio
 
-Welcome to my personal developer portfolio — a fully responsive and modern web portfolio showcasing my background, skills, and work. Built with clean HTML, Tailwind CSS, JavaScript, and enhanced with animations and icons, this site provides an engaging experience and an organized way to present my journey as a developer.
+Welcome to my personal portfolio — a fully responsive and modern web portfolio showcasing my background, skills, and work. Built with clean HTML, Tailwind CSS, JavaScript, and enhanced with animations and icons, this site provides an engaging experience and an organized way to present my journey as a developer.
 
-![Portfolio Banner](images/banner.png)
 
 ---
 
 ## ✨ Live Preview
 
-> 🚀 Coming Soon: [my-portfolio.live](https://your-live-link.com)
+> 🚀 Coming Soon: [my-portfolio.live](https://haymanotportfolio.netlify.app)
 
 ---
 
@@ -55,8 +54,6 @@ Welcome to my personal developer portfolio — a fully responsive and modern web
 ---
 
 ## 📸 Screenshots
-
-> *(Replace these with actual screenshots once available)*
 
 | Home Page | Skills Page |
 |-----------|-------------|
