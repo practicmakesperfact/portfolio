@@ -75,7 +75,7 @@ Welcome to my personal portfolio — a fully responsive and modern web portfolio
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/practicmakesperfect/portfolio.git
+git clone https://github.com/practicmakesperfact/portfolio.git
 cd portfolio
 
 # 2. Open index.html or other pages directly in a browser
