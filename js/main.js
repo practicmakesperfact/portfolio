@@ -95,3 +95,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+// functions to show coming soon message
+function showComingSoon() {
+                const msg = document.getElementById('coming-soon-msg');
+                msg.classList.remove('opacity-0');
+                msg.classList.add('opacity-100');
+
+                setTimeout(() => {
+                msg.classList.remove('opacity-100');
+                msg.classList.add('opacity-0');
+                }, 3000);
+            }

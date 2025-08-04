@@ -15,114 +15,67 @@
      <!-- rendered from navbar.html by js -->
     <div id="navbar"></div>
     <!-- Projects Section -->
-    <section class="pt-32 pb-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center" data-aos="fade-up">My Projects</h2>
+<section class="pt-32 pb-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center" data-aos="fade-up">My Projects</h2>
 
-            <!-- Project Filters -->
-            <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
-                <button class="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300">All</button>
-                <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition duration-300">Web Development</button>
-                <!-- <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition duration-300">Mobile Apps</button>  -->
-                <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition duration-300">UI/UX Design</button>
-            </div>
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Projects Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative" id="ecommerce-slider">
-                        <div class="slider-container">
-                            <div class="slider">
-                                <div class="slide">
-                                    <img src="images/ecommerce.png" >
-                                </div>
-                                <div class="slide">
-                                    <img src="images/ecommerce2.png" >
-                                </div>
-                                <div class="slide">
-                                    <img src="images/ecommerce3.png" >
-                                </div>
-                                <div class="slide">
-                                    <img src="images/ck.png" >
-                                </div>
-                                <div class="slide">
-                                    <img src="images/chapa.png">
-                                </div>
-                            </div>
-                            <button class="slider-button prev-button">
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
-                            <button class="slider-button next-button">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                            <div class="slider-nav">
-                                <span class="slider-dot active"></span>
-                                <span class="slider-dot"></span>
-                                <span class="slider-dot"></span>
-                                <span class="slider-dot"></span>
-                                <span class="slider-dot"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Ecommerce Website</h3>
-                        <p class="text-gray-600 mb-4">A full-featured e-commerce platform built with Django</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">JavaScript</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Django</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">CSS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                    <div class="relative">
-                        <img src="images/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
-                        <div class="absolute top-0 left-0 w-full h-full bg-blue-500 bg-opacity-20 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
-                            <a href="#" class="bg-white text-blue-500 px-6 py-2 rounded-full hover:bg-blue-50 transition duration-300">View Project</a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Ethio Car Rental System</h3>
-                        <p class="text-gray-600 mb-4"></p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Django</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">JavaScript</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">tailwindcss</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                    <div class="relative">
-                        <img src="images/project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
-                        <div class="absolute top-0 left-0 w-full h-full bg-blue-500 bg-opacity-20 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
-                            <a href="#" class="bg-white text-blue-500 px-6 py-2 rounded-full hover:bg-blue-50 transition duration-300">View Project</a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Portfolio Website</h3>
-                        <p class="text-gray-600 mb-4">A responsive portfolio website with modern design</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">HTML5</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Tailwind CSS</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Load More Button -->
-            <div class="text-center mt-12">
-                <button class="px-8 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300" data-aos="fade-up">
-                    Load More Projects
-                </button>
-            </div>
+      <!-- Project Card -->
+      <div class="relative group rounded-xl overflow-hidden shadow-lg" data-aos="fade-up">
+        <img src="images/ecommrce.jpg" alt="Ecommerce Website" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <h3 class="text-xl font-bold text-white mb-2">Ecommerce Website</h3>
+          <p class="text-sm text-gray-300 mb-4">Built with Django, JavaScript, and CSS</p>
+          <div class="flex flex-wrap justify-center gap-2 mb-4">
+            <span class="px-3 py-1 bg-white text-blue-600 rounded-full text-xs">JavaScript</span>
+            <span class="px-3 py-1 bg-white text-blue-600 rounded-full text-xs">Django</span>
+            <span class="px-3 py-1 bg-white text-blue-600 rounded-full text-xs">CSS</span>
+          </div>
+          <div class="flex gap-3">
+            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded text-sm hover:bg-blue-600">Live Demo</a>
+            <a href="https://github.com/practicmakesperfact/E-commerce-python-Django-project.git" class="bg-gray-800 text-white px-4 py-2 rounded text-sm hover:bg-gray-900">GitHub</a>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="relative group rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/rental.jpg" alt="Car Rental System" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <h3 class="text-xl font-bold text-white mb-2">Ethio Car Rental System</h3>
+          <p class="text-sm text-gray-300 mb-4">A car rental web app using Django</p>
+          <div class="flex flex-wrap justify-center gap-2 mb-4">
+            <span class="px-3 py-1 bg-white text-blue-600 rounded-full text-xs">Django</span>
+            <span class="px-3 py-1 bg-white text-blue-600 rounded-full text-xs">JavaScript</span>
+            <span class="px-3 py-1 bg-white text-blue-600 rounded-full text-xs">Tailwind CSS</span>
+          </div>
+          <div class="flex gap-3">
+            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded text-sm hover:bg-blue-600">Live Demo</a>
+            <a href="https://github.com/practicmakesperfact/Car-rental-system.git" class="bg-gray-800 text-white px-4 py-2 rounded text-sm hover:bg-gray-900">GitHub</a>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+
+    <!-- Load More with Message -->
+    <div class="text-center mt-12">
+      <div id="load-more-wrapper" class="inline-block relative">
+        <button onclick="showComingSoon()" class="px-8 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300">
+          Load More Projects
+        </button>
+        <div id="coming-soon-msg" class="absolute w-full left-0 mt-3 bg-gray-800 text-white text-sm px-4 py-2 rounded shadow opacity-0 transition-opacity duration-300">
+           More projects coming soon!
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Footer -->
     <!-- rendered from footer.html by js -->
@@ -137,6 +90,8 @@
         AOS.init();
         // Initialize the slider
         new ImageSlider('ecommerce-slider');
+        
     </script>
+    
 </body>
 </html>
